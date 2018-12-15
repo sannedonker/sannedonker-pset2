@@ -40,7 +40,7 @@
         android:layout_marginBottom="7dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text=""
+        android:hint=""
         app:layout_constraintBottom_toTopOf="@+id/word_type"
         app:layout_constraintEnd_toEndOf="@+id/word_type"
         app:layout_constraintEnd_toStartOf="@+id/admit_button"

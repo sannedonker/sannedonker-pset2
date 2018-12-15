@@ -23,6 +23,8 @@ public class FillActivity extends AppCompatActivity {
                     story.getPlaceholderRemainingCount() + " word(s) left");
         ((TextView) findViewById(R.id.word_type)).setText(
                     "please type a/an " + story.getNextPlaceholder().toLowerCase());
+        ((TextView) findViewById(R.id.typed_word)).setHint(
+                story.getNextPlaceholder().toLowerCase());
     }
 
     public void admitWord(View view) {
@@ -48,6 +50,8 @@ public class FillActivity extends AppCompatActivity {
                             story.getPlaceholderRemainingCount() + " word(s) left");
                 ((TextView) findViewById(R.id.word_type)).setText(
                             "please type a/an " + story.getNextPlaceholder().toLowerCase());
+                ((TextView) findViewById(R.id.typed_word)).setHint(
+                            story.getNextPlaceholder().toLowerCase());
                 ((TextView) findViewById(R.id.typed_word)).setText("");
             }
         }
